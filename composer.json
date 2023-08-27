@@ -1,0 +1,20 @@
+{
+    "name": "valigara/test",
+    "type": "project",
+    "require-dev": {
+    },
+    "license": "CC BY-NC-ND",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrey K"
+        }
+    ],
+    "require": {
+        "jlevers/selling-partner-api": "dev-main"
+    }
+}
