@@ -38,7 +38,7 @@ class ShippingService implements ShippingServiceInterface
                 'shipping_speed_category' => new ShippingSpeedCategory(self::SHIPPING_TYPES[$order->data['shipping_type_id']]),
                 'destination_address' => new Address([
                     'address_line1' => $order->data['shipping_adress'], //WTF?
-                    //No, I'm not doing any filtering today
+                    //No, I'm not doing any data sanitization today
                     'city' => $order->data['shipping_city'],
                     'state_or_region' => $order->data['shipping_state'],
                     'postal_code' => $order->data['shipping_zip'],
